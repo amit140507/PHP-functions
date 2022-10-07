@@ -1,6 +1,6 @@
 # PHP-functions
 
-## end()
+## [end()](https://www.php.net/manual/en/function.end.php)
 The end() function is an inbuilt function in PHP and is used to find the last element of the given array.
 
 #### $timeline
@@ -89,7 +89,7 @@ Array
 
 ``` 
 
-## file_get_contents()
+## [file_get_contents()](https://www.php.net/manual/en/function.file-get-contents.php)
 The file_get_contents() reads a file into a string.
 Ex: 
 ``` 
@@ -98,7 +98,7 @@ echo file_get_contents("test.txt");
 ?>
 ``` 
 
-## file_put_contents()
+## [file_put_contents()](https://www.php.net/manual/en/function.file-put-contents.php)
 Write data to a file.
 
 This function is identical to calling fopen(), fwrite() and fclose() successively to write data to a file.
@@ -110,7 +110,7 @@ file_put_contents( $filename, $data ,FILE_APPEND);
 file_put_contents( $filename, print_r($jsonString, true),FILE_APPEND);
 ``` 
 
-## fopen fwrite fclose
+## [fopen()](https://www.php.net/manual/en/function.fopen.php) [fwrite()](https://www.php.net/manual/en/function.fwrite.php) [fclose()](https://www.php.net/manual/en/function.fclose.php)
 
 **fopen** — Opens file or URL.
 
@@ -137,7 +137,7 @@ fwrite($fh, print_r($jsonString, true));
 fclose($fh); 
 ``` 
       
-## ucwords
+## [ucwords()](https://www.php.net/manual/en/function.ucwords.php)
 Uppercase the first character of each word in a string.
 ``` 
 <?php
@@ -150,7 +150,7 @@ $bar = ucwords(strtolower($bar)); // Hello World!
 ?>
 ``` 
 
-## str_replace
+## [str_replace()](https://www.php.net/manual/en/function.str-replace.php)
 Replace all occurrences of the search string with the replacement string.
 ``` 
 str_replace("$oldvalue", "$newvalue", "$varibalename");
