@@ -4,6 +4,11 @@
 The end() function is an inbuilt function in PHP and is used to find the last element of the given array.
 
 **$timeline**
+
+``` 
+print_r($timeline);
+``` 
+Result:
 ``` 
 Array
 (
@@ -52,9 +57,16 @@ Array
 
 )
 ``` 
-EX: Out of 3 array it is going to print only last one.
+
+Out of 3 array it is going to print only last one.
 
 **$endoftimeline = end($timeline);**
+
+``` 
+print_r($endoftimeline);
+
+``` 
+Result:
 ``` 
 Array
 (
@@ -79,7 +91,7 @@ Array
 
 ## file_get_contents()
 The file_get_contents() reads a file into a string.
-EX: 
+Ex: 
 ``` 
 <?php
 echo file_get_contents("test.txt");
@@ -113,7 +125,7 @@ $fh = fopen("$file, "a+");
 ``` 
 fwrite($fh,$data,true);
 ``` 
-**fclose** Closes an open file pointer
+**fclose** — Closes an open file pointer
 ``` 
 fclose($fh);
 ``` 
