@@ -3,12 +3,12 @@
 ## end()
 The end() function is an inbuilt function in PHP and is used to find the last element of the given array.
 
-**$timeline**
+#### $timeline
 
 ``` 
 print_r($timeline);
 ``` 
-Result:
+#### Result:
 ``` 
 Array
 (
@@ -60,7 +60,7 @@ Array
 
 Out of 3 array it is going to print only last one.
 
-**$endoftimeline = end($timeline);**
+#### $endoftimeline = end($timeline);
 
 ``` 
 print_r($endoftimeline);
