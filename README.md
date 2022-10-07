@@ -106,20 +106,20 @@ file_put_contents( $filename, print_r($jsonString, true),FILE_APPEND);
     
 ``` 
 <?php
-$handle = fopen("c:\\folder\\resource.txt", "a+");
+$fh = fopen("$file, "a+");
 ?>
 ``` 
 **fwrite** — Binary-safe file write
 ``` 
-fwrite($stream,$data,true);
+fwrite($fh,$data,true);
 ``` 
 **fclose** Closes an open file pointer
 ``` 
-fclose($stream);
+fclose($fh);
 ``` 
 Ex:
 ``` 
-$file = ABSPATH . 'coinbasetransactions.txt';
+$file = 'test.txt';
 $fh = fopen($file, 'a+') ; 
 fwrite($fh, print_r($jsonString, true)); 
 fclose($fh); 
@@ -140,9 +140,9 @@ $bar = ucwords(strtolower($bar)); // Hello World!
 
 ## str_replace
 Replace all occurrences of the search string with the replacement string.
-
+``` 
 str_replace("$oldvalue", "$newvalue", "$varibalename");
-
+``` 
 ``` 
 $created_at=str_replace("T"," ","$created");
 ``` 
