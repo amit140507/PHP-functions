@@ -88,18 +88,22 @@ echo file_get_contents("test.txt");
 
 ## file_put_contents()
 Write data to a file.
+
 This function is identical to calling fopen(), fwrite() and fclose() successively to write data to a file.
 If filename does not exist, the file is created. Otherwise, the existing file is overwritten, unless the FILE_APPEND flag is set.
 
-$file = ABSPATH . 'coinbasetransactions.txt';
+``` 
+$filename = 'text.txt';
 file_put_contents( $filename, $data ,FILE_APPEND);
-file_put_contents( $file, print_r($jsonString, true),FILE_APPEND);
+file_put_contents( $filename, print_r($jsonString, true),FILE_APPEND);
+``` 
 
 ## fopen fwrite fclose
 
 **fopen** — Opens file or URL.
 
-    **a+** - Open for reading and writing; place the file pointer at the end of the file. If the file does not exist, attempt to create it. In this mode,       fseek() only affects the reading position, writes are always appended.
+**a+** - Open for reading and writing; place the file pointer at the end of the file. If the file does not exist, attempt to create it. In this mode,       fseek() only affects the reading position, writes are always appended.
+    
 ``` 
 <?php
 $handle = fopen("c:\\folder\\resource.txt", "a+");
