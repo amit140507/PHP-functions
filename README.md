@@ -158,3 +158,22 @@ str_replace("$oldvalue", "$newvalue", "$varibalename");
 ``` 
 $created_at=str_replace("T"," ","$created");
 ``` 
+
+## [filemtime()](https://www.php.net/manual/en/function.filemtime.php)
+ Gets file modification time
+
+
+```
+<?php
+// outputs e.g.  somefile.txt was last modified: December 29 2002 22:16:23.
+
+$filename = 'somefile.txt';
+if (file_exists($filename)) {
+    echo "$filename was last modified: " . date ("F d Y H:i:s.", filemtime($filename));
+}
+?>
+```
+```
+$style_ver = filemtime( get_stylesheet_directory() . '/assets/js/custom.js' );
+    wp_register_script('allyearcooling_custom_js', get_stylesheet_directory_uri().'/assets/js/custom.js', array(), $style_ver);
+```
