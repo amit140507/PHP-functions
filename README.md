@@ -177,3 +177,9 @@ if (file_exists($filename)) {
 $style_ver = filemtime( get_stylesheet_directory() . '/assets/js/custom.js' );
     wp_register_script('allyearcooling_custom_js', get_stylesheet_directory_uri().'/assets/js/custom.js', array(), $style_ver);
 ```
+
+## [php://input()](https://www.php.net/manual/en/wrappers.php.php)
+php://input is a read-only stream that allows you to read raw data from the request body
+```
+ trim(file_get_contents('php://input');
+```
